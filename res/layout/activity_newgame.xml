@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/logoutButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/hello_label"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/loggedInUsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/logoutButton"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/usernameLabel"
+        android:text="@string/logged_in_username_label"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/logout_button"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/noActiveGameLabel"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoutButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_active_game"
+        android:textSize="20sp" />
+	
+    <!-- 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/day" />
+	-->
+
+
+	<TextView
+        android:id="@+id/createGameLabel"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noActiveGameLabel"
+        android:layout_centerHorizontal="true"
+        android:text="@string/create_game"
+        android:textSize="15sp" />
+	
+	<NumberPicker
+	    android:id="@+id/hoursPicker"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/createGameLabel"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="40dp"
+	    android:layout_marginTop="15dp" >
+	  
+	</NumberPicker>
+	
+		<NumberPicker
+	    android:id="@+id/minsPicker"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/createGameLabel"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="40dp"
+	    android:layout_marginTop="15dp" >
+	  
+	</NumberPicker>
+
+		<TextView
+		    android:id="@+id/hoursLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/loggedInUsernameLabel"
+		    android:layout_below="@+id/hoursPicker"
+		    android:text="@string/hour" />
+
+		<TextView
+		    android:id="@+id/minsLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/minsPicker"
+		    android:layout_alignLeft="@+id/minsPicker"
+		    android:text="@string/minutes" />
+		
+		<Button
+		    android:id="@+id/createGameButton"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="15dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:text="@string/create_game_button" />
+
+</RelativeLayout>

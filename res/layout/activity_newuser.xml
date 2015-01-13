@@ -1,0 +1,194 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    
+    <!-- 
+    
+    <TableRow
+        android:layout_width="fill_parent">
+    <TextView
+        android:id="@+id/headerLabel"
+ 		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_span="2"
+        android:layout_weight="1"
+        android:text="@string/new_user_label"
+        android:textSize="20sp" />
+    </TableRow>
+    -->
+    
+    <TableRow android:layout_width="fill_parent" >
+
+    <TextView
+        android:id="@+id/headerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_span="2"
+        android:layout_weight="1"
+        android:text="@string/new_user_label"
+        android:textSize="20sp" />
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/FirstnameRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/firstnameLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/firstname_label" />
+
+        <EditText
+            android:id="@+id/firstnameInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+    
+        <TableRow
+        android:id="@+id/LastnameRow"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    
+        <TextView
+	        android:id="@+id/lastnameLabel"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lastname_label"
+	        android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/lastnameInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" 
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+    
+    <TableRow
+        android:id="@+id/UsernameRow"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    
+        <TextView
+	        android:id="@+id/usernameLabel"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/username_label"
+	        android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/PasswordRow"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    
+        <TextView
+	        android:id="@+id/passwordLabel"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/password_label"
+	        android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/verifyPasswordRow"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    
+        <TextView
+	        android:id="@+id/verifyPasswordlabel"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/verify_pw_label"
+	        android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/verifyPasswordInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+    </TableRow>
+    
+    <TableRow>
+    <ListView>
+    </ListView>
+    </TableRow>
+
+    <TableRow android:layout_width="wrap_content" >
+
+    <Button
+        android:id="@+id/newUserSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_span="2"
+        android:text="@string/newuser_submit_button"
+        android:layout_weight="1" />
+
+    </TableRow>
+    
+    <TableRow android:layout_width="fill_parent" >
+
+    <TextView
+        android:id="@+id/errorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_span="2"
+        android:layout_weight="1" />
+
+    </TableRow>
+
+    <!-- 
+    
+    <TableRow
+         android:layout_gravity="center_horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    
+    </TableRow>
+    
+    -->
+    
+</TableLayout>
